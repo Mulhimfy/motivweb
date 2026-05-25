@@ -6,6 +6,7 @@ const APPLE_PATH =
 interface AppStoreBadgeProps {
   variant?: "solid" | "outline";
   className?: string;
+  location?: string;
 }
 
 /**
@@ -16,6 +17,7 @@ interface AppStoreBadgeProps {
 export default function AppStoreBadge({
   variant = "solid",
   className = "",
+  location,
 }: AppStoreBadgeProps) {
   const solid = variant === "solid";
 
@@ -24,6 +26,7 @@ export default function AppStoreBadge({
       href={APP_STORE_URL}
       target="_blank"
       rel="noopener noreferrer"
+      data-ga-location={location}
       className={`group inline-flex items-center gap-3 rounded-2xl px-6 py-3.5 transition-all ${
         solid
           ? "bg-cream-bright text-[#03191c] hover:shadow-[0_10px_40px_rgba(236,228,207,0.25)] hover:-translate-y-0.5"

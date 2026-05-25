@@ -36,7 +36,7 @@ export default function HeroSection() {
             </p>
 
             <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <AppStoreBadge variant="solid" />
+              <AppStoreBadge variant="solid" location="hero" />
               <a
                 href="#how"
                 className="inline-flex items-center justify-center rounded-2xl border border-[rgba(236,228,207,0.2)] px-6 py-3.5 font-semibold text-cream hover:border-accent hover:text-accent transition-all"

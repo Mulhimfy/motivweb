@@ -25,7 +25,7 @@ export default function DownloadBanner() {
               you is one download away.
             </p>
             <div className="mt-8 flex justify-center">
-              <AppStoreBadge variant="solid" />
+              <AppStoreBadge variant="solid" location="download_banner" />
             </div>
           </div>
         </div>

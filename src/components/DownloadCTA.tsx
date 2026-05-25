@@ -31,7 +31,7 @@ export default function DownloadCTA() {
         </p>
 
         <div className="flex justify-center">
-          <AppStoreBadge variant="solid" />
+          <AppStoreBadge variant="solid" location="download_cta" />
         </div>
 
         <p className="mt-6 text-xs text-cream-dim/80">

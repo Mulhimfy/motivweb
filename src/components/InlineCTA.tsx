@@ -20,7 +20,7 @@ export default function InlineCTA({
             {headline}
           </p>
           <div className="shrink-0">
-            <AppStoreBadge variant="solid" />
+            <AppStoreBadge variant="solid" location="inline_cta" />
           </div>
         </div>
         {note && (

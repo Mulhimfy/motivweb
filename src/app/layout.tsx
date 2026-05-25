@@ -3,6 +3,7 @@ import { Cormorant_Garamond, Inter } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
 import { APP_STORE_URL } from "@/lib/constants";
+import DownloadTracker from "@/components/DownloadTracker";
 
 const cormorant = Cormorant_Garamond({
   variable: "--font-cormorant-var",
@@ -103,6 +104,7 @@ export default function RootLayout({
       </head>
       <body className={`${cormorant.variable} ${inter.variable} antialiased`}>
         {children}
+        <DownloadTracker />
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-WV2N0GNDMH"
           strategy="afterInteractive"

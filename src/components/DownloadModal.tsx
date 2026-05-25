@@ -116,6 +116,7 @@ export default function DownloadModal() {
             href={APP_STORE_URL}
             target="_blank"
             rel="noopener noreferrer"
+            data-ga-location="modal"
             style={{
               display: "flex",
               alignItems: "center",

@@ -88,7 +88,7 @@ export default function FaqSection() {
             be the first one you don&apos;t miss.
           </p>
           <div className="flex justify-center">
-            <AppStoreBadge variant="solid" />
+            <AppStoreBadge variant="solid" location="faq" />
           </div>
         </div>
       </div>

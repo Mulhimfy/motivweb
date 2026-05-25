@@ -73,6 +73,7 @@ export default function ScrollDownloadBanner() {
           href={APP_STORE_URL}
           target="_blank"
           rel="noopener noreferrer"
+          data-ga-location="scroll_banner"
           style={{
             flexShrink: 0,
             padding: "9px 16px",

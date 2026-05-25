@@ -58,6 +58,7 @@ export default function Header() {
             href={APP_STORE_URL}
             target="_blank"
             rel="noopener noreferrer"
+            data-ga-location="header_desktop"
             className="px-5 py-2 bg-cream-bright text-[#03191c] text-sm font-semibold rounded-full hover:shadow-[0_0_24px_rgba(76,196,203,0.35)] transition-all"
           >
             Download
@@ -97,6 +98,7 @@ export default function Header() {
             href={APP_STORE_URL}
             target="_blank"
             rel="noopener noreferrer"
+            data-ga-location="header_mobile"
             className="px-5 py-2.5 bg-cream-bright text-[#03191c] text-sm font-semibold rounded-full text-center"
           >
             Download on the App Store

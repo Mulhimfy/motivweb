@@ -60,6 +60,7 @@ export default function Footer() {
               href={APP_STORE_URL}
               target="_blank"
               rel="noopener noreferrer"
+              data-ga-location="footer"
               className="inline-flex items-center gap-2 text-sm text-accent hover:text-cream transition-colors"
             >
               <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
