@@ -97,7 +97,7 @@ export default function DuaForm({ ownerId }: { ownerId: string }) {
               Your dua was sent
             </h1>
             <p className="text-white/70 mt-2" style={{ animation: "rise .5s ease-out .4s both" }}>
-              JazakAllahu khayran — may Allah accept it. 🤍
+              JazakAllahu khayran. May Allah accept it. 🤍
             </p>
           </div>
         ) : state === "offer" ? (
