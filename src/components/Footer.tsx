@@ -2,10 +2,11 @@ import Image from "next/image";
 import { APP_STORE_URL, PRIVACY_URL } from "@/lib/constants";
 
 const links = [
-  { href: "#problem", label: "The problem" },
-  { href: "#how", label: "How it works" },
-  { href: "#features", label: "Features" },
-  { href: "#faq", label: "FAQ" },
+  { href: "/#problem", label: "The problem" },
+  { href: "/#how", label: "How it works" },
+  { href: "/#features", label: "Features" },
+  { href: "/blog", label: "Guides" },
+  { href: "/#faq", label: "FAQ" },
 ];
 
 export default function Footer() {
