@@ -14,13 +14,13 @@ export default function BlogNav() {
         <Link href="/" className="flex items-center gap-2.5">
           <Image
             src="/app-icon.png"
-            alt="I pray app icon"
+            alt="Ilham app icon"
             width={34}
             height={34}
             className="rounded-[10px]"
           />
-          <span className="font-[family-name:var(--font-cormorant-var)] text-2xl font-semibold text-cream tracking-wide">
-            I pray
+          <span className="font-[family-name:var(--font-serif-var)] text-2xl font-semibold text-cream tracking-wide">
+            Ilham
           </span>
         </Link>
 
@@ -42,7 +42,7 @@ export default function BlogNav() {
             target="_blank"
             rel="noopener noreferrer"
             data-ga-location="blog_nav"
-            className="px-5 py-2 bg-cream-bright text-[#03191c] text-sm font-semibold rounded-full hover:shadow-[0_0_24px_rgba(76,196,203,0.35)] transition-all"
+            className="px-5 py-2 bg-cream-bright text-[#12121f] text-sm font-semibold rounded-full hover:shadow-[0_0_24px_rgba(217,185,155,0.35)] transition-all"
           >
             Download
           </a>

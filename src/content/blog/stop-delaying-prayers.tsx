@@ -165,8 +165,8 @@ export function Body() {
 
       <ArticleCTA
         location="blog_stop_delaying_mid"
-        headline="What if the apps just locked themselves when the adhan called?"
-        body="That's exactly what I pray does. The moment it's time, your distracting apps go dark — and the only key that reopens them is praying. Step 2, handled for you."
+        headline="What if your phone offered you a verse instead of another reel?"
+        body="That's what Ilham does. One wisdom paired with the exact Quran verse it stands on, delivered daily at the hour the scroll usually wins — plus anonymous duas reminding you someone cares. Free on Android."
       />
 
       <H2 id="be-honest-about-tools">An honest word about tools</H2>
@@ -217,15 +217,16 @@ export function Body() {
       </UL>
       <P>
         Those two alone will change more than a month of resolutions. Layer the
-        rest in as they become natural. And if you want the second one done for
-        you automatically — every prayer, every day, without relying on the
-        weakest version of yourself — that is the entire reason I pray exists.
+        rest in as they become natural. And feed the part of you that
+        <Em> wants</Em> to pray — a heart that hears one verse a day answers the
+        adhan far more easily than one that only hears notifications. That is
+        the entire reason Ilham exists.
       </P>
 
       <ArticleCTA
         location="blog_stop_delaying_end"
-        headline="Stop reading about it. Start praying on time."
-        body="I pray locks the apps stealing your salah until you actually pray. Accurate prayer times, authentic adhan, and a streak you'll want to protect. Free on iPhone, no account needed."
+        headline="Stop reading about it. Start with one verse a day."
+        body="Ilham brings your heart back to the Quran gently — a daily pairing of wisdom and revelation, streaks you'll want to keep, and anonymous duas from people you may never meet. Free on Android, no account needed."
       />
     </>
   );

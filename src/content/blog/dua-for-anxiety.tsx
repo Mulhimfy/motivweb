@@ -145,8 +145,8 @@ export function Body() {
 
       <ArticleCTA
         location="blog_dua_anxiety_mid"
-        headline="Carry these duas with you — and never miss the prayer that anchors them."
-        body="I pray keeps authentic duas for anxiety, worry and hardship in your pocket with Arabic, transliteration and meaning, alongside accurate prayer times and a gentle adhan. Free on iPhone, no account needed."
+        headline="Carry these words with you — and let others carry you, too."
+        body="Ilham lets friends and strangers send you heartfelt duas — anonymously, when you need them most — and brings your heart one calming verse every day, like “Verily, in the remembrance of Allah do hearts find rest.” Free on Android, no account needed."
       />
 
       <Callout title="Dua 4 — Entrusting your affairs to Allah">
@@ -218,7 +218,7 @@ export function Body() {
       <ArticleCTA
         location="blog_dua_anxiety_end"
         headline="Keep the words close for the moment you need them."
-        body="I pray puts authentic duas, accurate prayer times, and a calming adhan in one simple app — so when worry hits, what to say is already in your hand. Free on iPhone."
+        body="Save the verses that calm you in Ilham and return to them anytime — and wake up to duas made in your name by people who will never know they were answered. Free on Android, no noise."
       />
     </>
   );

@@ -5,16 +5,16 @@ import Footer from "@/components/Footer";
 import { posts } from "@/lib/blog/registry";
 
 export const metadata: Metadata = {
-  title: "Guides — Praying on Time, Prayer Times & Salah | I pray",
+  title: "Guides — Duas, Prayer & a Softer Heart | Ilham",
   description:
-    "Honest, practical guides on praying on time, understanding prayer times, and building a salah habit that actually sticks. From the team behind I pray.",
+    "Honest, practical guides on dua, prayer, and keeping your heart close to Allah in a noisy world. From the team behind Ilham.",
   alternates: { canonical: "https://getilham.com/blog" },
   openGraph: {
-    title: "Guides — I pray",
+    title: "Guides — Ilham",
     description:
-      "Honest, practical guides on praying on time and building a salah habit that sticks.",
+      "Honest, practical guides on dua, prayer, and keeping your heart close to Allah.",
     url: "https://getilham.com/blog",
-    siteName: "I pray",
+    siteName: "Ilham",
     type: "website",
   },
 };
@@ -22,10 +22,10 @@ export const metadata: Metadata = {
 const blogJsonLd = {
   "@context": "https://schema.org",
   "@type": "Blog",
-  name: "I pray Guides",
+  name: "Ilham Guides",
   url: "https://getilham.com/blog",
   description:
-    "Practical guides on praying on time, prayer times, and building a salah habit.",
+    "Practical guides on dua, prayer, and keeping your heart close to Allah.",
   blogPost: posts.map((p) => ({
     "@type": "BlogPosting",
     headline: p.title,
@@ -50,12 +50,12 @@ export default function BlogIndex() {
             <p className="text-xs tracking-[0.3em] text-gold uppercase mb-4">
               Guides
             </p>
-            <h1 className="font-[family-name:var(--font-cormorant-var)] text-4xl md:text-6xl font-semibold text-cream-bright leading-tight mb-5">
-              Praying on time, made practical
+            <h1 className="font-[family-name:var(--font-serif-var)] text-4xl md:text-6xl font-semibold text-cream-bright leading-tight mb-5">
+              Duas and prayer, made practical
             </h1>
             <p className="text-cream-dim text-lg leading-relaxed">
-              Honest writing on salah, prayer times, and the daily fight to put
-              the phone down and pray. No fluff, no guilt-tripping — just things
+              Honest writing on dua, salah, and keeping your heart close to
+              Allah in a noisy world. No fluff, no guilt-tripping — just things
               that actually help.
             </p>
           </header>
@@ -70,7 +70,7 @@ export default function BlogIndex() {
                 <p className="text-[11px] tracking-[0.2em] uppercase text-gold">
                   {p.category}
                 </p>
-                <h2 className="font-[family-name:var(--font-cormorant-var)] text-2xl md:text-[28px] font-semibold text-cream leading-tight group-hover:text-cream-bright transition-colors">
+                <h2 className="font-[family-name:var(--font-serif-var)] text-2xl md:text-[28px] font-semibold text-cream leading-tight group-hover:text-cream-bright transition-colors">
                   {p.title}
                 </h2>
                 <p className="text-cream-dim text-[15px] leading-relaxed flex-1">

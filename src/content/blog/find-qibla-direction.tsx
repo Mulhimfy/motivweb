@@ -92,8 +92,8 @@ export function Body() {
 
       <ArticleCTA
         location="blog_qibla_mid"
-        headline="Find the qibla in two seconds, wherever you are."
-        body="I pray has a built-in qibla compass with smooth haptic feedback that guides you as you turn — plus accurate prayer times and an authentic adhan, all in one app. Free on iPhone, no account needed."
+        headline="Keep your heart pointed the right way, too."
+        body="Ilham brings you one Islamic wisdom paired with the exact Quran verse it stands on, every day — and heartfelt anonymous duas from friends and strangers. Free on Android, no account needed."
       />
 
       <H2 id="method-2-region">Method 2 — Know your region's direction</H2>
@@ -194,8 +194,8 @@ export function Body() {
 
       <ArticleCTA
         location="blog_qibla_end"
-        headline="Qibla, prayer times, and adhan — in one calm app."
-        body="I pray points you to the Kaaba instantly, calls you with an authentic adhan, and locks your distractions until you pray. Free on iPhone."
+        headline="One quiet app for the heart behind the prayer."
+        body="Daily Quranic wisdom, anonymous duas, streaks and beautiful shareable verse cards — Ilham keeps your heart facing Allah between prayers. Free on Android."
       />
     </>
   );

@@ -22,12 +22,12 @@ export default function Home() {
         <ProblemSection />
         <HowItWorks />
         <InlineCTA
-          headline="You've seen how it works. Now let it work for you."
-          note="Free to download · iPhone · iOS 16 or later · No account needed"
+          headline="Someone out there would make dua for you. Give them the way."
+          note="Free on Google Play · Android · No account needed"
         />
         <FeaturesGrid />
         <AppScreenshots />
-        <InlineCTA headline="Stop reading about it. Start praying on time." />
+        <InlineCTA headline="Your link is ready. The first dua is waiting." />
         <PrivacySection />
         <FaqSection />
         <DownloadBanner />

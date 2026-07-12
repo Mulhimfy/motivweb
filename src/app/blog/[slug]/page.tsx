@@ -21,7 +21,7 @@ export async function generateMetadata({
   if (!post) return {};
   const url = `${SITE}/blog/${post.slug}`;
   return {
-    title: `${post.title} | I pray`,
+    title: `${post.title} | Ilham`,
     description: post.description,
     keywords: post.keywords,
     alternates: { canonical: url },
@@ -29,7 +29,7 @@ export async function generateMetadata({
       title: post.title,
       description: post.description,
       url,
-      siteName: "I pray",
+      siteName: "Ilham",
       type: "article",
       publishedTime: post.datePublished,
       modifiedTime: post.dateModified,
@@ -65,10 +65,10 @@ export default async function ArticlePage({
         description: post.description,
         datePublished: post.datePublished,
         dateModified: post.dateModified,
-        author: { "@type": "Organization", name: "I pray", url: SITE },
+        author: { "@type": "Organization", name: "Ilham", url: SITE },
         publisher: {
           "@type": "Organization",
-          name: "I pray",
+          name: "Ilham",
           url: SITE,
           logo: { "@type": "ImageObject", url: `${SITE}/app-icon.png` },
         },
@@ -123,7 +123,7 @@ export default async function ArticlePage({
             <p className="text-[11px] tracking-[0.25em] uppercase text-gold mb-4">
               {post.category}
             </p>
-            <h1 className="font-[family-name:var(--font-cormorant-var)] text-4xl md:text-5xl font-semibold text-cream-bright leading-[1.15] mb-5">
+            <h1 className="font-[family-name:var(--font-serif-var)] text-4xl md:text-5xl font-semibold text-cream-bright leading-[1.15] mb-5">
               {post.title}
             </h1>
             <div className="flex items-center gap-3 text-sm text-cream-dim/70">
@@ -147,13 +147,13 @@ export default async function ArticlePage({
           {/* FAQ */}
           {post.faq && post.faq.length > 0 && (
             <section className="mt-16">
-              <h2 className="font-[family-name:var(--font-cormorant-var)] text-3xl md:text-4xl font-semibold text-cream-bright mb-6">
+              <h2 className="font-[family-name:var(--font-serif-var)] text-3xl md:text-4xl font-semibold text-cream-bright mb-6">
                 Frequently asked
               </h2>
               <div className="flex flex-col divide-y divide-[rgba(236,228,207,0.1)]">
                 {post.faq.map((f, i) => (
                   <div key={i} className="py-5">
-                    <h3 className="font-[family-name:var(--font-cormorant-var)] text-xl md:text-2xl font-semibold text-cream mb-2">
+                    <h3 className="font-[family-name:var(--font-serif-var)] text-xl md:text-2xl font-semibold text-cream mb-2">
                       {f.q}
                     </h3>
                     <p className="text-cream/85 text-[16px] leading-[1.8]">{f.a}</p>
@@ -176,7 +176,7 @@ export default async function ArticlePage({
                     href={`/blog/${r.slug}`}
                     className="glass-card group flex flex-col gap-1.5 p-6"
                   >
-                    <span className="font-[family-name:var(--font-cormorant-var)] text-xl font-semibold text-cream group-hover:text-cream-bright transition-colors">
+                    <span className="font-[family-name:var(--font-serif-var)] text-xl font-semibold text-cream group-hover:text-cream-bright transition-colors">
                       {r.title}
                     </span>
                     <span className="text-cream-dim text-sm leading-relaxed">

@@ -5,7 +5,7 @@ import Image from "next/image";
 import { APP_STORE_URL } from "@/lib/constants";
 
 const links = [
-  { href: "/#problem", label: "The problem" },
+  { href: "/#problem", label: "Why Ilham" },
   { href: "/#how", label: "How it works" },
   { href: "/#features", label: "Features" },
   { href: "/blog", label: "Guides" },
@@ -34,13 +34,13 @@ export default function Header() {
         <a href="#" className="flex items-center gap-2.5">
           <Image
             src="/app-icon.png"
-            alt="I pray app icon"
+            alt="Ilham app icon"
             width={36}
             height={36}
             className="rounded-[10px]"
           />
-          <span className="font-[family-name:var(--font-cormorant-var)] text-2xl font-semibold text-cream tracking-wide">
-            I pray
+          <span className="font-[family-name:var(--font-serif-var)] text-2xl font-semibold text-cream tracking-wide">
+            Ilham
           </span>
         </a>
 
@@ -60,7 +60,7 @@ export default function Header() {
             target="_blank"
             rel="noopener noreferrer"
             data-ga-location="header_desktop"
-            className="px-5 py-2 bg-cream-bright text-[#03191c] text-sm font-semibold rounded-full hover:shadow-[0_0_24px_rgba(76,196,203,0.35)] transition-all"
+            className="px-5 py-2 bg-cream-bright text-[#12121f] text-sm font-semibold rounded-full hover:shadow-[0_0_24px_rgba(217,185,155,0.35)] transition-all"
           >
             Download
           </a>
@@ -100,9 +100,9 @@ export default function Header() {
             target="_blank"
             rel="noopener noreferrer"
             data-ga-location="header_mobile"
-            className="px-5 py-2.5 bg-cream-bright text-[#03191c] text-sm font-semibold rounded-full text-center"
+            className="px-5 py-2.5 bg-cream-bright text-[#12121f] text-sm font-semibold rounded-full text-center"
           >
-            Download on the App Store
+            Get it on Google Play
           </a>
         </div>
       )}

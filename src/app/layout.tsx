@@ -1,14 +1,14 @@
 import type { Metadata } from "next";
-import { Cormorant_Garamond, Inter } from "next/font/google";
+import { Lora, Inter } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
 import { APP_STORE_URL } from "@/lib/constants";
 import DownloadTracker from "@/components/DownloadTracker";
 
-const cormorant = Cormorant_Garamond({
-  variable: "--font-cormorant-var",
+const lora = Lora({
+  variable: "--font-serif-var",
   subsets: ["latin"],
-  weight: ["500", "600", "700"],
+  weight: ["400", "500", "600", "700"],
   display: "swap",
 });
 
@@ -19,23 +19,23 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "I pray — Lock Your Apps Until You Pray | Salah, Athan & Qibla",
+  title: "Ilham — Anonymous Duas & Daily Quranic Wisdom",
   description:
-    "The Muslim prayer app that locks the apps stealing your salah — until you actually pray. Accurate prayer times, authentic adhan, qibla compass and streaks. Free on iPhone.",
+    "Share your link and receive heartfelt duas from friends and strangers — 100% anonymous. Plus one wisdom and one Quran verse for your heart, every day. Free on Android.",
   keywords: [
-    "prayer app",
-    "app blocker for muslims",
-    "salah app",
-    "athan app",
-    "adhan app",
-    "qibla compass",
-    "prayer times app",
-    "never miss a prayer",
-    "muslim focus app",
-    "lock apps until you pray",
-    "screen time prayer app",
+    "dua app",
+    "anonymous dua",
+    "islamic quotes app",
+    "daily quran verses",
+    "islamic wisdom app",
+    "muslim inspiration app",
+    "daily islamic reminders",
+    "dua for me link",
+    "islamic quote wallpapers",
+    "quran quotes app",
+    "ilham app",
   ],
-  authors: [{ name: "I pray" }],
+  authors: [{ name: "Ilham" }],
   metadataBase: new URL("https://getilham.com"),
   alternates: {
     canonical: "/",
@@ -45,20 +45,20 @@ export const metadata: Metadata = {
     apple: "/app-icon.png",
   },
   openGraph: {
-    title: "I pray — Lock Your Apps Until You Pray",
+    title: "Ilham — Anonymous Duas & Daily Quranic Wisdom",
     description:
-      "Your phone keeps stealing your salah. I pray gives it back — it locks distracting apps the moment the adhan calls, until you pray.",
+      "Someone's dua could change your life. Share your link, receive anonymous duas — and let one verse reach your heart every day.",
     url: "https://getilham.com",
-    siteName: "I pray",
+    siteName: "Ilham",
     locale: "en_US",
     type: "website",
-    images: [{ url: "/app-icon.png", width: 1024, height: 1024, alt: "I pray app icon" }],
+    images: [{ url: "/app-icon.png", width: 1024, height: 1024, alt: "Ilham app icon" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "I pray — Lock Your Apps Until You Pray",
+    title: "Ilham — Anonymous Duas & Daily Quranic Wisdom",
     description:
-      "The Muslim prayer app that locks distracting apps until you pray. Free on iPhone.",
+      "Receive anonymous duas from friends and strangers, plus daily Islamic wisdom paired with the Quran. Free on Android.",
     images: ["/app-icon.png"],
   },
   robots: {
@@ -72,18 +72,18 @@ const jsonLd = {
   "@graph": [
     {
       "@type": "WebSite",
-      name: "I pray",
+      name: "Ilham",
       url: "https://getilham.com",
       description:
-        "The Muslim prayer app that locks distracting apps until you pray.",
+        "Anonymous duas from friends and strangers, and daily Islamic wisdom paired with the Quran.",
     },
     {
       "@type": "MobileApplication",
-      name: "I pray: Salah Athan Qibla Lock",
-      operatingSystem: "iOS",
+      name: "Ilham — Anonymous Duas & Daily Islamic Wisdom",
+      operatingSystem: "Android",
       applicationCategory: "LifestyleApplication",
       description:
-        "I pray locks the apps pulling you away from Allah the moment the adhan is called — until you pray. Accurate prayer times, authentic adhan, qibla compass, hijri calendar and streak tracking.",
+        "Ilham gives you a personal link — friends and strangers send you heartfelt duas, completely anonymous. Every day it pairs one Islamic wisdom with the Quran verse it came from, with daily reminders, streaks, beautiful backgrounds and full Arabic support.",
       installUrl: APP_STORE_URL,
     },
   ],
@@ -102,7 +102,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className={`${cormorant.variable} ${inter.variable} antialiased`}>
+      <body className={`${lora.variable} ${inter.variable} antialiased`}>
         {children}
         <DownloadTracker />
         <Script

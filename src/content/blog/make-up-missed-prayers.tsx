@@ -154,8 +154,8 @@ export function Body() {
 
       <ArticleCTA
         location="blog_qada_mid"
-        headline="Build the consistency that makes qada possible."
-        body="I pray helps you lock in today's five prayers on time — accurate prayer times, an authentic adhan, app-locking, and a streak you'll want to protect — so the backlog stops growing while you clear it. Free on iPhone."
+        headline="Consistency starts with a heart that's reminded daily."
+        body="Ilham keeps your heart in the right place while you rebuild — one wisdom and one Quran verse a day, streaks for the days you show up, and anonymous duas cheering you on. Free on Android."
       />
 
       <H2 id="consistency-wins">Why consistency beats intensity</H2>
@@ -190,8 +190,8 @@ export function Body() {
 
       <ArticleCTA
         location="blog_qada_end"
-        headline="Today's prayers, on time. Starting now."
-        body="I pray gives you accurate prayer times, an authentic adhan, and the focus to actually pray — the foundation everything else is built on. Free on iPhone, no account needed."
+        headline="A softer heart makes a steadier habit."
+        body="Ilham gives you one verse a day, a streak your heart keeps, and duas from people you may never meet — the inner side of consistency. Free on Android, no account needed."
       />
     </>
   );

@@ -46,15 +46,15 @@ export default function ScrollDownloadBanner() {
           gap: "14px",
           padding: "14px 16px",
           borderRadius: "18px",
-          background: "linear-gradient(135deg, rgba(11,54,60,0.98) 0%, rgba(6,33,38,0.98) 100%)",
+          background: "linear-gradient(135deg, rgba(35,35,56,0.98) 0%, rgba(26,26,46,0.98) 100%)",
           backdropFilter: "blur(16px)",
-          border: "1px solid rgba(76,196,203,0.25)",
+          border: "1px solid rgba(217,185,155,0.25)",
           boxShadow: "0 12px 44px rgba(0,0,0,0.6)",
         }}
       >
         <Image
           src="/app-icon.png"
-          alt="I pray app icon"
+          alt="Ilham app icon"
           width={44}
           height={44}
           style={{ borderRadius: "11px", flexShrink: 0 }}
@@ -62,10 +62,10 @@ export default function ScrollDownloadBanner() {
 
         <div style={{ flex: 1, minWidth: 0 }}>
           <p style={{ color: "#f8f4e8", fontSize: "14px", fontWeight: 600, lineHeight: 1.25, margin: 0 }}>
-            Don&apos;t miss the next adhan
+            Someone&apos;s dua could change your life
           </p>
           <p style={{ color: "#d6cba8", fontSize: "12px", marginTop: "2px", margin: 0 }}>
-            Lock your apps until you pray — free
+            Anonymous duas + daily Quranic wisdom — free
           </p>
         </div>
 
@@ -78,7 +78,7 @@ export default function ScrollDownloadBanner() {
             flexShrink: 0,
             padding: "9px 16px",
             background: "#f8f4e8",
-            color: "#03191c",
+            color: "#12121f",
             fontSize: "12px",
             fontWeight: 700,
             borderRadius: "999px",

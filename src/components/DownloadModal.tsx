@@ -38,7 +38,7 @@ export default function DownloadModal() {
         alignItems: "center",
         justifyContent: "center",
         padding: "24px",
-        background: "rgba(3,25,28,0.88)",
+        background: "rgba(18,18,31,0.88)",
         backdropFilter: "blur(8px)",
         animation: "modalFadeIn 0.4s ease",
       }}
@@ -54,8 +54,8 @@ export default function DownloadModal() {
           width: "100%",
           maxWidth: "440px",
           borderRadius: "26px",
-          background: "linear-gradient(160deg, #0b363c 0%, #062126 65%, #03191c 100%)",
-          border: "1px solid rgba(76,196,203,0.25)",
+          background: "linear-gradient(160deg, #232338 0%, #1a1a2e 65%, #12121f 100%)",
+          border: "1px solid rgba(217,185,155,0.25)",
           boxShadow: "0 32px 80px rgba(0,0,0,0.65)",
           animation: "modalSlideUp 0.4s ease",
           position: "relative",
@@ -88,7 +88,7 @@ export default function DownloadModal() {
         <div style={{ padding: "44px 36px 36px", textAlign: "center" }}>
           <Image
             src="/app-icon.png"
-            alt="I pray app icon"
+            alt="Ilham app icon"
             width={76}
             height={76}
             style={{ borderRadius: "18px", margin: "0 auto 22px" }}
@@ -101,15 +101,16 @@ export default function DownloadModal() {
               fontWeight: 600,
               margin: "0 0 12px",
               lineHeight: 1.2,
-              fontFamily: "var(--font-cormorant-var), serif",
+              fontFamily: "var(--font-serif-var), serif",
             }}
           >
-            Your next adhan is coming.
+            A dua with your name on it.
           </h2>
 
           <p style={{ color: "#d6cba8", fontSize: "15px", lineHeight: 1.6, margin: "0 0 28px" }}>
-            Let it be the first one you don&apos;t miss. Install I pray and the
-            apps stealing your salah go quiet — until you&apos;ve prayed.
+            Install Ilham, share your link, and heartfelt duas from friends and
+            strangers find their way to you — anonymously. One verse a day
+            finds your heart, too.
           </p>
 
           <a
@@ -123,7 +124,7 @@ export default function DownloadModal() {
               gap: "12px",
               padding: "14px 28px",
               background: "#f8f4e8",
-              color: "#03191c",
+              color: "#12121f",
               borderRadius: "999px",
               textDecoration: "none",
               fontWeight: 700,
@@ -132,10 +133,13 @@ export default function DownloadModal() {
               marginBottom: "14px",
             }}
           >
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z" />
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M3.6 2.4c-.37.2-.6.6-.6 1.1v17c0 .5.23.9.6 1.1l9.06-9.6L3.6 2.4z" />
+              <path d="M16.8 8.55 5.3 2.1l7.36 7.9 4.14-1.45z" />
+              <path d="M16.8 15.45 12.66 14 5.3 21.9l11.5-6.45z" />
+              <path d="M20.4 10.55l-2.53-1.42-4.5 2.87 4.5 2.87 2.53-1.42c.8-.45.8-2.45 0-2.9z" />
             </svg>
-            Download on the App Store
+            Get it on Google Play
           </a>
 
           <button

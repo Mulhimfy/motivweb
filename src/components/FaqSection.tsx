@@ -5,24 +5,28 @@ import AppStoreBadge from "./AppStoreBadge";
 
 const faqs = [
   {
-    q: "What if I have a real emergency?",
-    a: "By default, you can still unlock your apps in a genuine emergency — I pray trusts you. If you want that door fully closed so the only way out is to pray, switch on Strict Mode. It's your choice, set once.",
+    q: "Is it really anonymous?",
+    a: "Really. You never see who sent a dua — no names, no handles, no hints. The sender stays between themselves and Allah, which is exactly why people are honest in what they write.",
   },
   {
-    q: "Does it really lock the apps, or just nag me?",
-    a: "It really locks them. I pray is built on Apple's Screen Time API, so the apps you choose simply won't open during prayer time. There's no notification to swipe away and no willpower required — that's the whole point.",
+    q: "Do people need the app to send me a dua?",
+    a: "No. Your link opens right in the browser — anyone can write you a dua from their phone in seconds. No download, no sign-up on their side.",
   },
   {
-    q: "Will it drain my battery?",
-    a: "No. The lock runs through Apple's built-in system framework, not a background process quietly eating your battery. You won't notice it until the adhan calls.",
+    q: "Do I need an account?",
+    a: "Never. No sign-up, no email, no password. Download the app and your personal link already works — you're ready in under a minute.",
   },
   {
-    q: "Do I need to create an account?",
-    a: "Never. No sign-up, no email, no password. Download the app, allow location for accurate prayer times, and you're ready in under a minute.",
+    q: "Is Ilham free?",
+    a: "Completely. No subscription, no locked features. Download it and everything is yours.",
   },
   {
-    q: "Which apps can I lock?",
-    a: "Any app on your iPhone — Instagram, TikTok, YouTube, Snapchat, X, Reddit, games, browsers, whatever pulls you away. You pick the exact list and can change it anytime.",
+    q: "Is the content authentic?",
+    a: "Every wisdom is paired with the exact Quran verse it stands on — surah and ayah cited right on the card. Rooted in the Quran and Sunnah, nothing generated on the fly.",
+  },
+  {
+    q: "Does it work in Arabic?",
+    a: "Fully. Ilham is bilingual — English and Arabic with complete right-to-left support, and the Quran rendered in the classical Amiri script.",
   },
 ];
 
@@ -35,7 +39,7 @@ function FaqItem({ q, a }: { q: string; a: string }) {
         className="w-full flex items-center justify-between gap-4 py-5 text-left"
         aria-expanded={open}
       >
-        <span className="font-[family-name:var(--font-cormorant-var)] text-xl md:text-2xl font-semibold text-cream">
+        <span className="font-[family-name:var(--font-serif-var)] text-xl md:text-2xl font-semibold text-cream">
           {q}
         </span>
         <span
@@ -71,7 +75,7 @@ export default function FaqSection() {
           <p className="text-xs tracking-[0.3em] text-gold uppercase mb-4">
             Honest answers
           </p>
-          <h2 className="font-[family-name:var(--font-cormorant-var)] text-3xl md:text-5xl font-semibold text-cream-bright">
+          <h2 className="font-[family-name:var(--font-serif-var)] text-3xl md:text-5xl font-semibold text-cream-bright">
             Every reason to hesitate, answered
           </h2>
         </div>
@@ -84,8 +88,8 @@ export default function FaqSection() {
 
         <div className="mt-12 text-center">
           <p className="text-cream-dim mb-6">
-            The honest truth? You won&apos;t know until your next adhan. Let it
-            be the first one you don&apos;t miss.
+            The honest truth? Somewhere out there, someone would make dua for
+            you today — if you gave them the way.
           </p>
           <div className="flex justify-center">
             <AppStoreBadge variant="solid" location="faq" />

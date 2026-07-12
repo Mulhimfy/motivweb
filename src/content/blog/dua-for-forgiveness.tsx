@@ -105,8 +105,8 @@ export function Body() {
 
       <ArticleCTA
         location="blog_dua_forgiveness_mid"
-        headline="Keep Sayyid al-Istighfar where you can read it every morning."
-        body="I pray keeps the authentic morning and evening adhkar — including the duas of forgiveness — in your pocket, with prayer times and a gentle adhan. Free on iPhone, no account needed."
+        headline="Let a verse about mercy find you every morning."
+        body="Ilham pairs wisdoms like “Never despair of Allah's mercy” with the exact verses they stand on — one each day — and lets friends and strangers make dua for you, anonymously. Free on Android, no account needed."
       />
 
       <H2 id="the-simple-istighfar">The simple istighfar to keep on your tongue</H2>
@@ -154,8 +154,8 @@ export function Body() {
 
       <ArticleCTA
         location="blog_dua_forgiveness_end"
-        headline="Start fresh — today, on time, with a clear heart."
-        body="I pray brings together prayer times, an authentic adhan, and the duas of forgiveness and remembrance, so turning back to Allah is the easiest thing in your day. Free on iPhone."
+        headline="Start fresh — today, with a clear heart."
+        body="Ilham makes turning back to Allah the easiest thing in your day: one Quranic reflection each morning, the duas you saved, and hearts you've never met praying for yours. Free on Android."
       />
     </>
   );

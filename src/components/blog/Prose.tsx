@@ -10,7 +10,7 @@ import type { ReactNode } from "react";
 
 export function Lead({ children }: { children: ReactNode }) {
   return (
-    <p className="text-cream-bright/95 text-xl md:text-2xl font-[family-name:var(--font-cormorant-var)] leading-relaxed mb-10">
+    <p className="text-cream-bright/95 text-xl md:text-2xl font-[family-name:var(--font-serif-var)] leading-relaxed mb-10">
       {children}
     </p>
   );
@@ -28,7 +28,7 @@ export function H2({ id, children }: { id?: string; children: ReactNode }) {
   return (
     <h2
       id={id}
-      className="font-[family-name:var(--font-cormorant-var)] text-3xl md:text-4xl font-semibold text-cream-bright mt-16 mb-5 scroll-mt-28"
+      className="font-[family-name:var(--font-serif-var)] text-3xl md:text-4xl font-semibold text-cream-bright mt-16 mb-5 scroll-mt-28"
     >
       {children}
     </h2>
@@ -39,7 +39,7 @@ export function H3({ id, children }: { id?: string; children: ReactNode }) {
   return (
     <h3
       id={id}
-      className="font-[family-name:var(--font-cormorant-var)] text-2xl md:text-3xl font-semibold text-cream mt-12 mb-4 scroll-mt-28"
+      className="font-[family-name:var(--font-serif-var)] text-2xl md:text-3xl font-semibold text-cream mt-12 mb-4 scroll-mt-28"
     >
       {children}
     </h3>
@@ -74,11 +74,11 @@ export function LI({ children }: { children: ReactNode }) {
 export function Step({ n, title, children }: { n: number; title: string; children: ReactNode }) {
   return (
     <li className="relative flex gap-5">
-      <span className="font-[family-name:var(--font-cormorant-var)] text-4xl font-bold leading-none text-accent/30 shrink-0 w-10">
+      <span className="font-[family-name:var(--font-serif-var)] text-4xl font-bold leading-none text-accent/30 shrink-0 w-10">
         {String(n).padStart(2, "0")}
       </span>
       <div>
-        <h3 className="font-[family-name:var(--font-cormorant-var)] text-2xl font-semibold text-cream mb-2">
+        <h3 className="font-[family-name:var(--font-serif-var)] text-2xl font-semibold text-cream mb-2">
           {title}
         </h3>
         <div className="text-cream/90 text-[17px] leading-[1.8]">{children}</div>
@@ -122,7 +122,7 @@ export function A({ href, children }: { href: string; children: ReactNode }) {
 export function Quote({ children, cite }: { children: ReactNode; cite?: string }) {
   return (
     <blockquote className="my-8 border-l-2 border-gold/50 pl-6">
-      <p className="font-[family-name:var(--font-cormorant-var)] text-2xl md:text-3xl italic text-cream-bright leading-snug">
+      <p className="font-[family-name:var(--font-serif-var)] text-2xl md:text-3xl italic text-cream-bright leading-snug">
         {children}
       </p>
       {cite && <cite className="mt-3 block text-sm not-italic text-gold">{cite}</cite>}
@@ -147,7 +147,7 @@ export function Dua({
   source?: string;
 }) {
   return (
-    <div className="my-8 rounded-2xl border border-[rgba(76,196,203,0.22)] bg-[rgba(8,43,48,0.5)] p-6 md:p-8">
+    <div className="my-8 rounded-2xl border border-[rgba(217,185,155,0.22)] bg-[rgba(30,30,51,0.5)] p-6 md:p-8">
       <p
         lang="ar"
         dir="rtl"
@@ -156,7 +156,7 @@ export function Dua({
       >
         {arabic}
       </p>
-      <p className="font-[family-name:var(--font-cormorant-var)] italic text-cream-bright/90 text-lg md:text-xl leading-relaxed mb-3">
+      <p className="font-[family-name:var(--font-serif-var)] italic text-cream-bright/90 text-lg md:text-xl leading-relaxed mb-3">
         {transliteration}
       </p>
       <p className="text-cream/90 text-[17px] leading-[1.8] mb-3">
@@ -170,7 +170,7 @@ export function Dua({
 /** Soft highlight box for a key idea or aside. */
 export function Callout({ title, children }: { title?: string; children: ReactNode }) {
   return (
-    <div className="my-8 rounded-2xl border border-[rgba(76,196,203,0.22)] bg-[rgba(8,43,48,0.5)] p-6 md:p-7">
+    <div className="my-8 rounded-2xl border border-[rgba(217,185,155,0.22)] bg-[rgba(30,30,51,0.5)] p-6 md:p-7">
       {title && (
         <p className="text-[11px] tracking-[0.2em] uppercase text-gold mb-2">{title}</p>
       )}
@@ -184,7 +184,7 @@ export function Callout({ title, children }: { title?: string; children: ReactNo
 /** TL;DR / key takeaways at the top of a long guide. */
 export function KeyTakeaways({ items }: { items: string[] }) {
   return (
-    <div className="my-8 rounded-2xl border border-[rgba(236,228,207,0.12)] bg-[rgba(11,54,60,0.4)] p-6 md:p-7">
+    <div className="my-8 rounded-2xl border border-[rgba(236,228,207,0.12)] bg-[rgba(35,35,56,0.4)] p-6 md:p-7">
       <p className="text-[11px] tracking-[0.2em] uppercase text-gold mb-4">The short version</p>
       <ul className="flex flex-col gap-2.5">
         {items.map((t, i) => (
@@ -205,7 +205,7 @@ export function Table({ head, rows }: { head: string[]; rows: ReactNode[][] }) {
     <div className="my-8 overflow-x-auto rounded-2xl border border-[rgba(236,228,207,0.1)]">
       <table className="w-full border-collapse text-left text-[15px] md:text-[16px]">
         <thead>
-          <tr className="bg-[rgba(8,43,48,0.7)]">
+          <tr className="bg-[rgba(30,30,51,0.7)]">
             {head.map((h, i) => (
               <th key={i} className="px-4 py-3 font-semibold text-cream-bright border-b border-[rgba(236,228,207,0.1)]">
                 {h}
@@ -215,7 +215,7 @@ export function Table({ head, rows }: { head: string[]; rows: ReactNode[][] }) {
         </thead>
         <tbody>
           {rows.map((row, ri) => (
-            <tr key={ri} className="odd:bg-[rgba(11,54,60,0.3)]">
+            <tr key={ri} className="odd:bg-[rgba(35,35,56,0.3)]">
               {row.map((cell, ci) => (
                 <td key={ci} className="px-4 py-3 align-top text-cream/85 border-b border-[rgba(236,228,207,0.06)]">
                   {cell}

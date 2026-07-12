@@ -105,8 +105,8 @@ export function Body() {
 
       <ArticleCTA
         location="blog_dua_parents_mid"
-        headline="Make dua for your parents part of every prayer."
-        body="I pray keeps these Quranic duas in your pocket and reminds you to pray on time — so a dua for the two people who raised you is never far from your day. Free on iPhone, no account needed."
+        headline="Make dua for your parents part of every day."
+        body="Save these Quranic duas in Ilham and let a daily verse keep them close — so a prayer for the two people who raised you is never far from your day. Free on Android, no account needed."
       />
 
       <H2 id="dua-of-gratitude">For gratitude and righteousness</H2>
@@ -145,8 +145,8 @@ export function Body() {
 
       <ArticleCTA
         location="blog_dua_parents_end"
-        headline="Let every prayer carry a dua for the ones who raised you."
-        body="I pray brings prayer times, an authentic adhan, and the duas for your parents into one simple app — so you never go a day without praying for them. Free on iPhone."
+        headline="Let others pray for them, too."
+        body="Ilham gives you a personal link — share it, and friends and strangers send heartfelt duas for you and the ones you love. Anonymous, sincere, and free on Android."
       />
     </>
   );

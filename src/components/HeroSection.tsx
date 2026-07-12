@@ -14,25 +14,24 @@ export default function HeroSection() {
           <div className="text-center lg:text-left">
             <p className="inline-flex items-center gap-2 rounded-full border border-[rgba(236,228,207,0.14)] px-4 py-1.5 text-xs tracking-wide text-gold">
               <span className="h-1.5 w-1.5 rounded-full bg-accent" />
-              For iPhone · Free to download
+              For Android · Free to download
             </p>
 
-            <h1 className="mt-6 font-[family-name:var(--font-cormorant-var)] text-5xl md:text-7xl font-bold text-cream-bright leading-[1.05] tracking-tight">
-              Your phone keeps
+            <h1 className="mt-6 font-[family-name:var(--font-serif-var)] text-5xl md:text-6xl xl:text-7xl font-bold text-cream-bright leading-[1.08] tracking-tight">
+              When did someone
               <br />
-              stealing your{" "}
-              <span className="text-accent">salah.</span>
+              last make <span className="text-accent">dua</span> for you?
             </h1>
 
             <p className="mt-6 text-base md:text-lg text-cream-dim max-w-lg mx-auto lg:mx-0 leading-relaxed">
-              <span className="text-cream font-medium">I pray</span> locks the
-              apps pulling you away from Allah — Instagram, TikTok, YouTube,
-              whatever distracts you — the moment the adhan is called. They stay
-              dark until you actually pray.
+              Maybe a parent, long ago. Maybe a stranger you&apos;ll never meet.{" "}
+              <span className="text-cream font-medium">Ilham</span> gives you a
+              link — share it, and friends and strangers send you heartfelt
+              duas. Completely anonymous. It stays between them and Allah.
             </p>
 
             <p className="mt-3 text-base md:text-lg text-cream-dim max-w-lg mx-auto lg:mx-0">
-              No willpower needed.
+              And every day, one verse finds its way back to your heart.
             </p>
 
             <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
@@ -46,7 +45,7 @@ export default function HeroSection() {
             </div>
 
             <p className="mt-6 text-xs text-cream-dim/80">
-              iOS 16+ · No account needed · Works fully on your device
+              Free · No account needed · 100% anonymous · English &amp; العربية
             </p>
           </div>
 

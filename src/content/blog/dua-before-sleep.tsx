@@ -122,8 +122,8 @@ export function Body() {
 
       <ArticleCTA
         location="blog_dua_sleep_mid"
-        headline="Build a bedtime routine you'll actually keep."
-        body="I pray keeps the authentic sleeping duas, the three Quls and Ayat al-Kursi in your pocket — and locks the apps that keep you scrolling past your bedtime. Free on iPhone, no account needed."
+        headline="Let the last thing you read tonight be worth keeping."
+        body="Ilham brings you one Islamic wisdom paired with its Quran verse every day — a gentler final read than a feed — and an inbox of heartfelt duas people made for you, anonymously. Free on Android, no account needed."
       />
 
       <H2 id="the-protection-recitations">The recitations for protection</H2>
@@ -177,7 +177,7 @@ export function Body() {
       <ArticleCTA
         location="blog_dua_sleep_end"
         headline="Make tonight the first night you sleep on the Sunnah."
-        body="I pray gives you the bedtime duas, prayer times, a gentle adhan to wake you, and app-locking to guard your sleep — all in one free app. Start tonight."
+        body="End the day with Ilham instead of the scroll — a verse chosen for your heart, the duas you saved, and prayers from people you may never meet waiting for your Ameen. Free on Android. Start tonight."
       />
     </>
   );

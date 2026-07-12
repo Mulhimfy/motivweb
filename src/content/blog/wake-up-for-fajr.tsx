@@ -151,8 +151,8 @@ export function Body() {
 
       <ArticleCTA
         location="blog_fajr_mid"
-        headline="What if your phone locked itself at night — and woke you with the real adhan?"
-        body="I pray can lock the apps that keep you up past your bedtime, then call you to Fajr with an authentic adhan from Makkah or Madinah — not a beep you sleep through. The night-before problem and the morning one, in one app."
+        headline="Some mornings need more than an alarm — they need a reason."
+        body="Ilham gives your heart one: a daily wisdom paired with the exact Quran verse it stands on, and heartfelt duas from people rooting for you — anonymously. Free on Android."
       />
 
       <H2 id="the-hidden-cause">The hidden cause nobody admits</H2>
@@ -205,8 +205,8 @@ export function Body() {
 
       <ArticleCTA
         location="blog_fajr_end"
-        headline="Make tomorrow's Fajr the first one you don't miss."
-        body="I pray gives you accurate prayer times, an authentic adhan to wake you, app-locking to protect your sleep, and a streak you'll want to keep. Free on iPhone, no account needed."
+        headline="Let someone's dua meet you in the morning."
+        body="With Ilham you wake up to heartfelt duas sent to your link and one verse chosen for your day — a reason to reach for meaning before the feed. Free on Android, no account needed."
       />
     </>
   );

@@ -105,7 +105,7 @@ export function Body() {
       <ArticleCTA
         location="blog_dua_rizq_mid"
         headline="Catch the morning — where rizq and barakah begin."
-        body="I pray wakes you for Fajr with an authentic adhan and keeps the morning duas for provision in your pocket. The day starts better when it starts with prayer. Free on iPhone."
+        body="Ilham starts your day with one wisdom and the Quran verse it stands on — reminders of the One who provides — and keeps the morning duas for provision saved and close. Free on Android."
       />
 
       <H2 id="quranic-dua-for-need">When the need is real — Musa's dua</H2>
@@ -153,8 +153,8 @@ export function Body() {
 
       <ArticleCTA
         location="blog_dua_rizq_end"
-        headline="Start every day with the prayer that opens provision."
-        body="I pray gives you accurate prayer times, an authentic adhan, and the duas for rizq and barakah in one free app — so you ask Allah first, then go earn with trust. Free on iPhone."
+        headline="Ask Allah first — then go earn with trust."
+        body="Ilham keeps your heart anchored while you work for your rizq: a daily verse about trust and provision, your saved duas, and anonymous prayers from people who want good for you. Free on Android."
       />
     </>
   );

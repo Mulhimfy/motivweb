@@ -2,7 +2,7 @@ import Image from "next/image";
 import { APP_STORE_URL, PRIVACY_URL } from "@/lib/constants";
 
 const links = [
-  { href: "/#problem", label: "The problem" },
+  { href: "/#problem", label: "Why Ilham" },
   { href: "/#how", label: "How it works" },
   { href: "/#features", label: "Features" },
   { href: "/blog", label: "Guides" },
@@ -19,18 +19,18 @@ export default function Footer() {
             <div className="flex items-center gap-2.5 mb-3">
               <Image
                 src="/app-icon.png"
-                alt="I pray app icon"
+                alt="Ilham app icon"
                 width={36}
                 height={36}
                 className="rounded-[10px]"
               />
-              <span className="font-[family-name:var(--font-cormorant-var)] text-2xl font-semibold text-cream">
-                I pray
+              <span className="font-[family-name:var(--font-serif-var)] text-2xl font-semibold text-cream">
+                Ilham
               </span>
             </div>
             <p className="text-cream-dim text-sm leading-relaxed max-w-xs">
-              The Muslim prayer app that locks your distractions until you pray.
-              Salah, athan, qibla — and the focus to actually use them.
+              Anonymous duas from friends and strangers, and daily Islamic
+              wisdom paired with the Quran. Quietly, gently, daily.
             </p>
           </div>
 
@@ -55,7 +55,7 @@ export default function Footer() {
           {/* Get the app */}
           <div>
             <h4 className="text-sm font-semibold text-cream-dim uppercase tracking-wider mb-4">
-              Get I pray
+              Get Ilham
             </h4>
             <a
               href={APP_STORE_URL}
@@ -65,9 +65,12 @@ export default function Footer() {
               className="inline-flex items-center gap-2 text-sm text-accent hover:text-cream transition-colors"
             >
               <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z" />
+                <path d="M3.6 2.4c-.37.2-.6.6-.6 1.1v17c0 .5.23.9.6 1.1l9.06-9.6L3.6 2.4z" />
+                <path d="M16.8 8.55 5.3 2.1l7.36 7.9 4.14-1.45z" />
+                <path d="M16.8 15.45 12.66 14 5.3 21.9l11.5-6.45z" />
+                <path d="M20.4 10.55l-2.53-1.42-4.5 2.87 4.5 2.87 2.53-1.42c.8-.45.8-2.45 0-2.9z" />
               </svg>
-              Download on the App Store
+              Get it on Google Play
             </a>
           </div>
         </div>
@@ -75,7 +78,7 @@ export default function Footer() {
         {/* Bottom */}
         <div className="mt-12 pt-8 border-t border-[rgba(236,228,207,0.07)] flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-xs text-cream-dim/70">
-            &copy; {new Date().getFullYear()} I pray. All rights reserved.
+            &copy; {new Date().getFullYear()} Ilham. All rights reserved.
           </p>
           <div className="flex items-center gap-4">
             <a
