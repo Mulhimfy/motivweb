@@ -37,9 +37,8 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Ilham" }],
   metadataBase: new URL("https://getilham.com"),
-  alternates: {
-    canonical: "/",
-  },
+  // No `alternates.canonical` here: child routes inherit it, which would make
+  // every page without its own canonical point at the homepage.
   icons: {
     icon: "/app-icon.png",
     apple: "/app-icon.png",

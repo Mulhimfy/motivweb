@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Privacy Policy — Ilham",
   description: "Privacy policy for the Ilham app.",
-  alternates: { canonical: "https://privacy.getilham.com" },
+  alternates: { canonical: "https://getilham.com/privacy" },
 };
 
 function Section({ title, children }: { title: string; children: React.ReactNode }) {
