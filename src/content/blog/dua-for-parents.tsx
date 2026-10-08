@@ -86,7 +86,7 @@ export function Body() {
       <Dua
         arabic="رَبِّ ارْحَمْهُمَا كَمَا رَبَّيَانِي صَغِيرًا"
         transliteration="Rabbi irḥamhumā kamā rabbayānī ṣaghīrā"
-        translation="My Lord, have mercy upon them as they brought me up when I was small."
+        translation="My Lord, have mercy upon them as they brought me [up when I was] small."
         source="Qur'an 17:24"
       />
 
@@ -105,8 +105,8 @@ export function Body() {
 
       <ArticleCTA
         location="blog_dua_parents_mid"
-        headline="Make dua for your parents part of every day."
-        body="Save these Quranic duas in Ilham and let a daily verse keep them close — so a prayer for the two people who raised you is never far from your day. Free on Android, no account needed."
+        headline="Make a dua for your parents they can hear."
+        body="“My Lord, have mercy upon them as they brought me [up when I was] small.” Turn Al-Isra 17:24 into a reel with AyahReel and send it to your family. Free on Android and iPhone."
       />
 
       <H2 id="dua-of-gratitude">For gratitude and righteousness</H2>
@@ -145,8 +145,8 @@ export function Body() {
 
       <ArticleCTA
         location="blog_dua_parents_end"
-        headline="Let others pray for them, too."
-        body="Ilham gives you a personal link — share it, and friends and strangers send heartfelt duas for you and the ones you love. Anonymous, sincere, and free on Android."
+        headline="Dedicate a reel to them as sadaqah jariyah."
+        body="AyahReel lets you dedicate a Quran reel or card to someone you love, living or passed. Share it, and every person it reaches can carry on as reward for them, in shaa Allah. Free."
       />
     </>
   );

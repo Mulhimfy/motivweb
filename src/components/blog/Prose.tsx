@@ -3,7 +3,7 @@ import type { ReactNode } from "react";
 
 /**
  * Semantic, server-rendered article primitives.
- * Everything here is plain HTML styled to the site's teal/cream system —
+ * Everything here is plain HTML styled to the site's navy/gold system —
  * no client JS, no markdown runtime. Crawlers see real h2/p/ul/table on
  * first paint, links included. That's the whole point.
  */
@@ -147,12 +147,11 @@ export function Dua({
   source?: string;
 }) {
   return (
-    <div className="my-8 rounded-2xl border border-[rgba(217,185,155,0.22)] bg-[rgba(30,30,51,0.5)] p-6 md:p-8">
+    <div className="my-8 rounded-2xl border border-gold/20 bg-surface-2/50 p-6 md:p-8">
       <p
         lang="ar"
         dir="rtl"
-        style={{ fontFamily: "'Amiri', serif" }}
-        className="text-cream-bright text-[26px] md:text-[32px] leading-[2] text-right mb-5"
+        className="font-arabic text-cream-bright text-[26px] md:text-[32px] leading-[2] text-right mb-5"
       >
         {arabic}
       </p>
@@ -170,7 +169,7 @@ export function Dua({
 /** Soft highlight box for a key idea or aside. */
 export function Callout({ title, children }: { title?: string; children: ReactNode }) {
   return (
-    <div className="my-8 rounded-2xl border border-[rgba(217,185,155,0.22)] bg-[rgba(30,30,51,0.5)] p-6 md:p-7">
+    <div className="my-8 rounded-2xl border border-gold/20 bg-surface-2/50 p-6 md:p-7">
       {title && (
         <p className="text-[11px] tracking-[0.2em] uppercase text-gold mb-2">{title}</p>
       )}
@@ -205,7 +204,7 @@ export function Table({ head, rows }: { head: string[]; rows: ReactNode[][] }) {
     <div className="my-8 overflow-x-auto rounded-2xl border border-[rgba(236,228,207,0.1)]">
       <table className="w-full border-collapse text-left text-[15px] md:text-[16px]">
         <thead>
-          <tr className="bg-[rgba(30,30,51,0.7)]">
+          <tr className="bg-surface-2/70">
             {head.map((h, i) => (
               <th key={i} className="px-4 py-3 font-semibold text-cream-bright border-b border-[rgba(236,228,207,0.1)]">
                 {h}

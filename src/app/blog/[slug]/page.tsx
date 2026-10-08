@@ -4,8 +4,7 @@ import Link from "next/link";
 import BlogNav from "@/components/blog/BlogNav";
 import Footer from "@/components/Footer";
 import { getPost, getAllSlugs, getRelated } from "@/lib/blog/registry";
-
-const SITE = "https://getilham.com";
+import { SITE_URL as SITE } from "@/lib/constants";
 
 export function generateStaticParams() {
   return getAllSlugs().map((slug) => ({ slug }));
@@ -21,7 +20,7 @@ export async function generateMetadata({
   if (!post) return {};
   const url = `${SITE}/blog/${post.slug}`;
   return {
-    title: `${post.title} | Ilham`,
+    title: `${post.title} | AyahReel`,
     description: post.description,
     keywords: post.keywords,
     alternates: { canonical: url },
@@ -29,7 +28,7 @@ export async function generateMetadata({
       title: post.title,
       description: post.description,
       url,
-      siteName: "Ilham",
+      siteName: "AyahReel",
       type: "article",
       publishedTime: post.datePublished,
       modifiedTime: post.dateModified,
@@ -65,10 +64,10 @@ export default async function ArticlePage({
         description: post.description,
         datePublished: post.datePublished,
         dateModified: post.dateModified,
-        author: { "@type": "Organization", name: "Ilham", url: SITE },
+        author: { "@type": "Organization", name: "AyahReel", url: SITE },
         publisher: {
           "@type": "Organization",
-          name: "Ilham",
+          name: "AyahReel",
           url: SITE,
           logo: { "@type": "ImageObject", url: `${SITE}/app-icon.png` },
         },

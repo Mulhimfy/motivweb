@@ -1,118 +1,97 @@
 @import "tailwindcss";
 
 @theme inline {
-  /* ---- Surfaces (deep indigo night, from the app's splash #1a1a2e) ---- */
-  --color-background: #12121f;
-  --color-surface: #1a1a2e;
-  --color-surface-2: #232338;
+  /* ---- Surfaces (the app icon's midnight navy #10182b) ---- */
+  --color-background: #0b1120;
+  --color-surface: #111a2e;
+  --color-surface-2: #18233b;
 
-  /* ---- Accents (warm sand from the app icon #D4B5A0) ---- */
-  --color-accent: #d9b99b;        /* sand — interactive / glow */
-  --color-accent-deep: #b0876a;   /* deeper sand — button gradient top */
-  --color-gold: #d4a574;          /* gold — eyebrows / small labels */
-  --color-gold-bright: #e8c990;
+  /* ---- Accents (the icon's gold gradient #e0b96a -> #c49a50) ---- */
+  --color-accent: #e0bc72;
+  --color-accent-deep: #b98d45;
+  --color-gold: #dcb468;
+  --color-gold-bright: #ecd08f;
 
   /* ---- Text (warm cream) ---- */
-  --color-cream: #ece4cf;
-  --color-cream-bright: #f8f4e8;
-  --color-cream-dim: #d6cba8;
-  --color-border: rgba(236, 228, 207, 0.1);
+  --color-cream: #ece6d6;
+  --color-cream-bright: #faf6ec;
+  --color-cream-dim: #b9b4a6;
+  --color-border: rgba(236, 230, 214, 0.1);
 
   --font-serif: var(--font-serif-var);
   --font-inter: var(--font-inter-var);
-}
-
-@font-face {
-  font-family: "Amiri";
-  src: url("https://fonts.gstatic.com/s/amiri/v27/J7aRnpd8CGxBHqUpvrIw74NL.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-  unicode-range: U+0600-06FF, U+200C-200E, U+2010-2011, U+204F, U+2E41, U+FB50-FDFF, U+FE80-FEFC;
+  --font-arabic: var(--font-arabic-var);
 }
 
 /* ---- Base ---- */
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 80px;
 }
 
 body {
-  background: #12121f;
-  color: #ece4cf;
+  background: #0b1120;
+  color: #ece6d6;
   font-family: var(--font-inter), system-ui, sans-serif;
   overflow-x: hidden;
 }
 
 ::selection {
-  background: rgba(217, 185, 155, 0.25);
-  color: #f8f4e8;
+  background: rgba(224, 188, 114, 0.28);
+  color: #faf6ec;
 }
 
-/* ---- Animated Hero Gradient (indigo night drift) ---- */
-@keyframes gradient-shift {
-  0%, 100% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
+.font-arabic {
+  font-family: var(--font-arabic), "Amiri", serif;
 }
 
-.hero-gradient {
-  background: linear-gradient(-45deg, #12121f, #1a1a2e, #232338, #2c2c4d, #1a1a2e);
-  background-size: 400% 400%;
-  animation: gradient-shift 18s ease infinite;
+.text-gold-gradient {
+  background: linear-gradient(180deg, #f1d595 0%, #d3a554 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
-/* ---- Phone Float ---- */
-@keyframes float {
-  0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(-12px); }
+.btn-gold {
+  background: linear-gradient(180deg, #e8c47c 0%, #c99d52 100%);
+  color: #0b1120;
+  box-shadow: 0 10px 30px -10px rgba(224, 188, 114, 0.55),
+    inset 0 1px 0 rgba(255, 255, 255, 0.35);
 }
 
-.animate-float { animation: float 5s ease-in-out infinite; }
-.animate-float-delayed { animation: float 5s ease-in-out 1s infinite; }
-.animate-float-delayed-2 { animation: float 5s ease-in-out 2s infinite; }
-
-/* ---- Glassmorphism ---- */
+/* ---- Glass ---- */
 .glass {
-  background: rgba(26, 26, 46, 0.72);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(236, 228, 207, 0.08);
+  background: rgba(11, 17, 32, 0.72);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border-bottom: 1px solid rgba(236, 230, 214, 0.07);
 }
 
 .glass-card {
-  background: rgba(35, 35, 56, 0.45);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(236, 228, 207, 0.08);
-  border-radius: 20px;
+  background: linear-gradient(180deg, rgba(24, 35, 59, 0.7), rgba(17, 26, 46, 0.55));
+  border: 1px solid rgba(236, 230, 214, 0.08);
+  border-radius: 22px;
   transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .glass-card:hover {
-  transform: translateY(-4px);
-  border-color: rgba(217, 185, 155, 0.45);
-  box-shadow: 0 8px 32px rgba(217, 185, 155, 0.14);
+  transform: translateY(-3px);
+  border-color: rgba(224, 188, 114, 0.4);
+  box-shadow: 0 14px 40px -12px rgba(224, 188, 114, 0.18);
 }
 
-/* ---- Scroll Fade In ---- */
-@keyframes fade-in-up {
-  from { opacity: 0; transform: translateY(30px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-.animate-fade-in-up { animation: fade-in-up 0.6s ease forwards; }
-
-/* ---- Islamic 8-point star pattern overlay ---- */
+/* ---- Islamic 8-point star pattern overlay (the icon's star) ---- */
 .islamic-pattern {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Cg fill='none' stroke='%23ece4cf' stroke-opacity='0.05' stroke-width='1'%3E%3Crect x='32' y='32' width='56' height='56'/%3E%3Crect x='32' y='32' width='56' height='56' transform='rotate(45 60 60)'/%3E%3C/g%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Cg fill='none' stroke='%23ece6d6' stroke-opacity='0.045' stroke-width='1'%3E%3Crect x='32' y='32' width='56' height='56'/%3E%3Crect x='32' y='32' width='56' height='56' transform='rotate(45 60 60)'/%3E%3C/g%3E%3C/svg%3E");
   background-size: 120px 120px;
 }
 
-/* soft glow used behind hero / CTA */
-.teal-glow {
-  background: radial-gradient(circle, rgba(217, 185, 155, 0.16) 0%, transparent 70%);
+/* soft gold glow used behind hero / CTA (name kept from the old theme) */
+.teal-glow,
+.gold-glow {
+  background: radial-gradient(closest-side, rgba(224, 188, 114, 0.11), transparent);
 }
 
-/* ---- Quote / step divider (line - dot - line, like the app's quote card) ---- */
 .quote-divider {
   display: flex;
   align-items: center;
@@ -129,50 +108,89 @@ body {
   background: currentColor;
 }
 
-/* ---- Phone Mockup ---- */
+/* ---- Phone ---- */
 .phone-frame {
   position: relative;
-  width: 280px;
-  border-radius: 44px;
-  border: 4px solid #262640;
-  background: #12121f;
-  overflow: hidden;
-  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(236, 228, 207, 0.06);
+  border-radius: 46px;
+  padding: 10px;
+  background: linear-gradient(160deg, #2a3550, #151d31 40%, #0d1424);
+  box-shadow: 0 40px 90px -20px rgba(0, 0, 0, 0.75),
+    0 0 0 1px rgba(236, 230, 214, 0.08), inset 0 1px 0 rgba(255, 255, 255, 0.08);
 }
 
-.phone-notch {
-  position: absolute;
-  top: 12px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 96px;
-  height: 26px;
+.phone-screen {
+  position: relative;
+  border-radius: 37px;
+  overflow: hidden;
+  aspect-ratio: 9 / 19.5;
   background: #000;
-  border-radius: 20px;
-  z-index: 10;
 }
+
+@keyframes kenburns {
+  from { transform: scale(1.02); }
+  to { transform: scale(1.14) translateY(-2%); }
+}
+
+.kenburns { animation: kenburns 14s ease-out both; }
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.animate-float { animation: float 6s ease-in-out infinite; }
+
+/* ---- Scenery marquee ---- */
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee 60s linear infinite;
+}
+
+.marquee-track.reverse { animation-direction: reverse; }
+
+.marquee-mask {
+  mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+}
+
+/* ---- Reveal on scroll (progressive: only where scroll timelines exist) ---- */
+@supports (animation-timeline: view()) {
+  @keyframes reveal {
+    from { opacity: 0; transform: translateY(24px); }
+    to { opacity: 1; transform: none; }
+  }
+  .reveal {
+    animation: reveal linear both;
+    animation-timeline: view();
+    animation-range: entry 0% entry 40%;
+  }
+}
+
+/* ---- FAQ ---- */
+details > summary { list-style: none; cursor: pointer; }
+details > summary::-webkit-details-marker { display: none; }
+details[open] .faq-icon { transform: rotate(45deg); }
 
 /* ---- Scrollbar ---- */
 ::-webkit-scrollbar { width: 6px; height: 6px; }
 ::-webkit-scrollbar-track { background: transparent; }
 ::-webkit-scrollbar-thumb {
-  background: rgba(236, 228, 207, 0.15);
+  background: rgba(236, 230, 214, 0.15);
   border-radius: 3px;
 }
 
-/* ---- Horizontal quote-card scroll ---- */
-.category-scroll {
-  scrollbar-width: thin;
-  scrollbar-color: rgba(236, 228, 207, 0.15) transparent;
-}
-
-.category-scroll::-webkit-scrollbar { height: 4px; }
-
 @media (prefers-reduced-motion: reduce) {
-  .hero-gradient,
+  html { scroll-behavior: auto; }
+  .kenburns,
   .animate-float,
-  .animate-float-delayed,
-  .animate-float-delayed-2 {
-    animation: none;
+  .marquee-track,
+  .reveal {
+    animation: none !important;
   }
 }

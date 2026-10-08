@@ -93,7 +93,7 @@ export function Body() {
       <ArticleCTA
         location="blog_qibla_mid"
         headline="Keep your heart pointed the right way, too."
-        body="Ilham brings you one Islamic wisdom paired with the exact Quran verse it stands on, every day — and heartfelt anonymous duas from friends and strangers. Free on Android, no account needed."
+        body="Between prayers, let your feed face the Quran. AyahReel turns any ayah into a reel you can share in under a minute. Free on Android and iPhone, no account needed."
       />
 
       <H2 id="method-2-region">Method 2 — Know your region's direction</H2>
@@ -195,7 +195,7 @@ export function Body() {
       <ArticleCTA
         location="blog_qibla_end"
         headline="One quiet app for the heart behind the prayer."
-        body="Daily Quranic wisdom, anonymous duas, streaks and beautiful shareable verse cards — Ilham keeps your heart facing Allah between prayers. Free on Android."
+        body="Quran reels, Islamic cards, a daily ayah on your home screen and a Quran quiz to test your hifz. AyahReel keeps the Quran close between prayers. Free on Android and iPhone."
       />
     </>
   );

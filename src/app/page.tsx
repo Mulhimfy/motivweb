@@ -1,46 +1,58 @@
 import type { Metadata } from "next";
-import Header from "@/components/Header";
-import HeroSection from "@/components/HeroSection";
-import ProblemSection from "@/components/ProblemSection";
-import HowItWorks from "@/components/HowItWorks";
-import InlineCTA from "@/components/InlineCTA";
-import FeaturesGrid from "@/components/FeaturesGrid";
-import AppScreenshots from "@/components/AppScreenshots";
-import PrivacySection from "@/components/PrivacySection";
-import FaqSection from "@/components/FaqSection";
-import DownloadBanner from "@/components/DownloadBanner";
-import DownloadCTA from "@/components/DownloadCTA";
+import SiteHeader from "@/components/SiteHeader";
 import Footer from "@/components/Footer";
-import ScrollDownloadBanner from "@/components/ScrollDownloadBanner";
-import DownloadModal from "@/components/DownloadModal";
+import {
+  Hero,
+  Stats,
+  HowItWorks,
+  Features,
+  Scenery,
+  Dawah,
+  Amanah,
+  Privacy,
+  Faq,
+  Guides,
+  FinalCta,
+} from "@/components/home/Sections";
+import { homeFaq } from "@/lib/faq";
+import { SITE_URL } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  alternates: { canonical: "https://getilham.com" },
+  alternates: { canonical: SITE_URL },
+};
+
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: homeFaq.map((f) => ({
+    "@type": "Question",
+    name: f.q,
+    acceptedAnswer: { "@type": "Answer", text: f.a },
+  })),
 };
 
 export default function Home() {
   return (
     <>
-      <Header />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
+      <SiteHeader />
       <main>
-        <HeroSection />
-        <ProblemSection />
+        <Hero />
+        <Stats />
         <HowItWorks />
-        <InlineCTA
-          headline="Someone out there would make dua for you. Give them the way."
-          note="Free on Google Play · Android · No account needed"
-        />
-        <FeaturesGrid />
-        <AppScreenshots />
-        <InlineCTA headline="Your link is ready. The first dua is waiting." />
-        <PrivacySection />
-        <FaqSection />
-        <DownloadBanner />
-        <DownloadCTA />
+        <Features />
+        <Scenery />
+        <Dawah />
+        <Amanah />
+        <Privacy />
+        <Faq />
+        <Guides />
+        <FinalCta />
       </main>
       <Footer />
-      <ScrollDownloadBanner />
-      <DownloadModal />
     </>
   );
 }

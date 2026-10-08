@@ -154,8 +154,8 @@ export function Body() {
 
       <ArticleCTA
         location="blog_qada_mid"
-        headline="Consistency starts with a heart that's reminded daily."
-        body="Ilham keeps your heart in the right place while you rebuild — one wisdom and one Quran verse a day, streaks for the days you show up, and anonymous duas cheering you on. Free on Android."
+        headline="Consistency starts with a heart that is reminded daily."
+        body="AyahReel puts a daily ayah on your home screen and keeps a streak for the days you show up. Share one verse a day and watch the habit grow. Free on Android and iPhone."
       />
 
       <H2 id="consistency-wins">Why consistency beats intensity</H2>
@@ -191,7 +191,7 @@ export function Body() {
       <ArticleCTA
         location="blog_qada_end"
         headline="A softer heart makes a steadier habit."
-        body="Ilham gives you one verse a day, a streak your heart keeps, and duas from people you may never meet — the inner side of consistency. Free on Android, no account needed."
+        body="One verse a day, shared as a reel, is a small habit that keeps you close to the Quran. AyahReel makes it take a minute. Free, no account needed."
       />
     </>
   );

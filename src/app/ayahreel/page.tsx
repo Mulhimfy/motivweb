@@ -3,19 +3,19 @@ import type { Metadata } from "next";
 /**
  * Direct APK download for AyahReel.
  *
- * This is not an Ilham page and does not sell anything — it exists so a
- * link can be handed to someone who should end up with the app installed,
- * in one tap, without a store in the way. Every choice below follows from
- * that: one button, the file behind it, and only the facts a person needs
- * before they let an unknown APK onto their phone.
+ * It does not sell anything. It exists so a link can be handed to someone
+ * who should end up with the app installed, in one tap, without a store in
+ * the way. Every choice below follows from that: one button, the file
+ * behind it, and only the facts a person needs before they let an unknown
+ * APK onto their phone.
  *
  * Deliberately no Play Store link. A page offering both sends the visitor
  * to make a decision they have no basis for, and the store build is not
  * what this link is for.
  *
- * `noindex`: this site is Ilham's, and its blog and sitemap exist to rank
- * for Ilham. A second app's download page competing in that index would
- * muddy it for no gain — this page is meant to be *sent*, not found.
+ * `noindex`: the home page is what should rank for AyahReel. A sideload
+ * page in the index would compete with it and send searchers to an APK
+ * instead of the store. This page is meant to be *sent*, not found.
  */
 
 const APK_URL =
@@ -34,16 +34,15 @@ export default function AyahReelDownloadPage() {
   return (
     <main
       className="min-h-screen flex flex-col items-center justify-center px-5 py-16 islamic-pattern relative overflow-hidden"
-      style={{ background: "linear-gradient(135deg,#232338 0%,#1a1a2e 55%,#12121f 100%)" }}
+      style={{ background: "linear-gradient(160deg,#18233b 0%,#111a2e 55%,#0b1120 100%)" }}
     >
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 h-[420px] w-[420px] teal-glow" />
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 h-[420px] w-[420px] gold-glow" />
 
       <div className="relative w-full max-w-lg text-center">
         <p
           lang="ar"
           dir="rtl"
-          className="text-2xl md:text-3xl text-gold/90 mb-2"
-          style={{ fontFamily: "'Amiri', serif" }}
+          className="font-arabic text-2xl md:text-3xl text-gold/90 mb-2"
         >
           وَرَتِّلِ الْقُرْآنَ تَرْتِيلًا
         </p>
@@ -72,8 +71,8 @@ export default function AyahReelDownloadPage() {
           download
           className="inline-flex flex-col items-center justify-center w-full rounded-2xl px-8 py-5 font-semibold text-lg transition-transform hover:scale-[1.02] active:scale-[0.99]"
           style={{
-            background: "linear-gradient(135deg,#d9b99b 0%,#b0876a 100%)",
-            color: "#12121f",
+            background: "linear-gradient(180deg,#e8c47c 0%,#c99d52 100%)",
+            color: "#0b1120",
           }}
         >
           <span>Download for Android</span>

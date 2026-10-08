@@ -151,8 +151,8 @@ export function Body() {
 
       <ArticleCTA
         location="blog_fajr_mid"
-        headline="Some mornings need more than an alarm — they need a reason."
-        body="Ilham gives your heart one: a daily wisdom paired with the exact Quran verse it stands on, and heartfelt duas from people rooting for you — anonymously. Free on Android."
+        headline="Some mornings need more than an alarm. They need a reason."
+        body="Make Fajr the time you share the first good thing of the day. AyahReel turns a morning verse into a reel in under a minute, ready before your friends wake up. Free on Android and iPhone."
       />
 
       <H2 id="the-hidden-cause">The hidden cause nobody admits</H2>
@@ -205,8 +205,8 @@ export function Body() {
 
       <ArticleCTA
         location="blog_fajr_end"
-        headline="Let someone's dua meet you in the morning."
-        body="With Ilham you wake up to heartfelt duas sent to your link and one verse chosen for your day — a reason to reach for meaning before the feed. Free on Android, no account needed."
+        headline="Let the first thing your friends see today be an ayah."
+        body="After Fajr, pick a verse, a reciter and a sunrise, and post it. AyahReel does the editing for you. Free on Android and iPhone, no account needed."
       />
     </>
   );

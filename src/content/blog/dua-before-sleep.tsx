@@ -122,8 +122,8 @@ export function Body() {
 
       <ArticleCTA
         location="blog_dua_sleep_mid"
-        headline="Let the last thing you read tonight be worth keeping."
-        body="Ilham brings you one Islamic wisdom paired with its Quran verse every day — a gentler final read than a feed — and an inbox of heartfelt duas people made for you, anonymously. Free on Android, no account needed."
+        headline="Let the last thing you watch tonight be worth keeping."
+        body="AyahReel turns the verses you sleep on, like Ayat al-Kursi and the last two ayahs of Al-Baqarah, into a calm reel with the recitation and the words lighting up as they are read. Free on Android and iPhone."
       />
 
       <H2 id="the-protection-recitations">The recitations for protection</H2>
@@ -176,8 +176,8 @@ export function Body() {
 
       <ArticleCTA
         location="blog_dua_sleep_end"
-        headline="Make tonight the first night you sleep on the Sunnah."
-        body="End the day with Ilham instead of the scroll — a verse chosen for your heart, the duas you saved, and prayers from people you may never meet waiting for your Ameen. Free on Android. Start tonight."
+        headline="Send someone a verse to sleep on tonight."
+        body="Pick Al-Mulk or Ayat al-Kursi, choose a quiet night sky, and share a reel your family can fall asleep to. AyahReel makes it in under a minute. Free, no account."
       />
     </>
   );

@@ -104,8 +104,8 @@ export function Body() {
 
       <ArticleCTA
         location="blog_dua_rizq_mid"
-        headline="Catch the morning — where rizq and barakah begin."
-        body="Ilham starts your day with one wisdom and the Quran verse it stands on — reminders of the One who provides — and keeps the morning duas for provision saved and close. Free on Android."
+        headline="Catch the morning, where rizq and barakah begin."
+        body="Start your day by sharing a verse about the One who provides. AyahReel turns At-Talaq 65:3 or any ayah you choose into a reel in under a minute. Free on Android and iPhone."
       />
 
       <H2 id="quranic-dua-for-need">When the need is real — Musa's dua</H2>
@@ -153,8 +153,8 @@ export function Body() {
 
       <ArticleCTA
         location="blog_dua_rizq_end"
-        headline="Ask Allah first — then go earn with trust."
-        body="Ilham keeps your heart anchored while you work for your rizq: a daily verse about trust and provision, your saved duas, and anonymous prayers from people who want good for you. Free on Android."
+        headline="Ask Allah first, then go earn with trust."
+        body="Put “whoever relies upon Allah, then He is sufficient for him” on your feed today. AyahReel makes Quran reels with recitation, Arabic and translation synced. Free, no ads."
       />
     </>
   );

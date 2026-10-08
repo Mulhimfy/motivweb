@@ -145,8 +145,8 @@ export function Body() {
 
       <ArticleCTA
         location="blog_dua_anxiety_mid"
-        headline="Carry these words with you — and let others carry you, too."
-        body="Ilham lets friends and strangers send you heartfelt duas — anonymously, when you need them most — and brings your heart one calming verse every day, like “Verily, in the remembrance of Allah do hearts find rest.” Free on Android, no account needed."
+        headline="Carry these words with you, and pass them on."
+        body="“Verily, in the remembrance of Allah do hearts find rest.” With AyahReel you can turn that verse into a reel in under a minute and send it to someone who is struggling today. Free on Android and iPhone."
       />
 
       <Callout title="Dua 4 — Entrusting your affairs to Allah">
@@ -218,7 +218,7 @@ export function Body() {
       <ArticleCTA
         location="blog_dua_anxiety_end"
         headline="Keep the words close for the moment you need them."
-        body="Save the verses that calm you in Ilham and return to them anytime — and wake up to duas made in your name by people who will never know they were answered. Free on Android, no noise."
+        body="Save the verses that calm you as reels on your phone, with the recitation you love, and share them when a friend needs them most. AyahReel is free, with no ads and no noise."
       />
     </>
   );

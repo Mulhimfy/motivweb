@@ -3,18 +3,19 @@ import Link from "next/link";
 import BlogNav from "@/components/blog/BlogNav";
 import Footer from "@/components/Footer";
 import { posts } from "@/lib/blog/registry";
+import { SITE_URL } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "Guides — Duas, Prayer & a Softer Heart | Ilham",
+  title: "Guides: Duas, Prayer & a Softer Heart | AyahReel",
   description:
-    "Honest, practical guides on dua, prayer, and keeping your heart close to Allah in a noisy world. From the team behind Ilham.",
-  alternates: { canonical: "https://getilham.com/blog" },
+    "Honest, practical guides on dua, prayer, and keeping your heart close to Allah in a noisy world. From the team behind AyahReel.",
+  alternates: { canonical: `${SITE_URL}/blog` },
   openGraph: {
-    title: "Guides — Ilham",
+    title: "Guides | AyahReel",
     description:
       "Honest, practical guides on dua, prayer, and keeping your heart close to Allah.",
-    url: "https://getilham.com/blog",
-    siteName: "Ilham",
+    url: `${SITE_URL}/blog`,
+    siteName: "AyahReel",
     type: "website",
   },
 };
@@ -22,14 +23,14 @@ export const metadata: Metadata = {
 const blogJsonLd = {
   "@context": "https://schema.org",
   "@type": "Blog",
-  name: "Ilham Guides",
-  url: "https://getilham.com/blog",
+  name: "AyahReel Guides",
+  url: `${SITE_URL}/blog`,
   description:
     "Practical guides on dua, prayer, and keeping your heart close to Allah.",
   blogPost: posts.map((p) => ({
     "@type": "BlogPosting",
     headline: p.title,
-    url: `https://getilham.com/blog/${p.slug}`,
+    url: `${SITE_URL}/blog/${p.slug}`,
     datePublished: p.datePublished,
     dateModified: p.dateModified,
   })),

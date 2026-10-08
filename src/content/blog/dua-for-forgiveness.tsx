@@ -105,8 +105,8 @@ export function Body() {
 
       <ArticleCTA
         location="blog_dua_forgiveness_mid"
-        headline="Let a verse about mercy find you every morning."
-        body="Ilham pairs wisdoms like “Never despair of Allah's mercy” with the exact verses they stand on — one each day — and lets friends and strangers make dua for you, anonymously. Free on Android, no account needed."
+        headline="Let a verse about mercy reach someone today."
+        body="“Do not despair of the mercy of Allah.” Turn Az-Zumar 39:53 into a beautiful reel with AyahReel and share it. Someone scrolling tonight may need it more than you know. Free on Android and iPhone."
       />
 
       <H2 id="the-simple-istighfar">The simple istighfar to keep on your tongue</H2>
@@ -154,8 +154,8 @@ export function Body() {
 
       <ArticleCTA
         location="blog_dua_forgiveness_end"
-        headline="Start fresh — today, with a clear heart."
-        body="Ilham makes turning back to Allah the easiest thing in your day: one Quranic reflection each morning, the duas you saved, and hearts you've never met praying for yours. Free on Android."
+        headline="Start fresh, and help someone else start too."
+        body="AyahReel makes sharing the Quran the easiest thing in your day: pick a verse of repentance, a reciter and a scenery, and post it in under a minute. Free, no account needed."
       />
     </>
   );

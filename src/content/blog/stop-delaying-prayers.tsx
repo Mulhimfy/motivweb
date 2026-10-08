@@ -165,8 +165,8 @@ export function Body() {
 
       <ArticleCTA
         location="blog_stop_delaying_mid"
-        headline="What if your phone offered you a verse instead of another reel?"
-        body="That's what Ilham does. One wisdom paired with the exact Quran verse it stands on, delivered daily at the hour the scroll usually wins — plus anonymous duas reminding you someone cares. Free on Android."
+        headline="What if your feed offered a verse instead of another reel?"
+        body="That is what AyahReel is for. Turn any ayah into a reel with the recitation and translation, and let it reach someone at the hour the scroll usually wins. Free on Android and iPhone."
       />
 
       <H2 id="be-honest-about-tools">An honest word about tools</H2>
@@ -219,14 +219,15 @@ export function Body() {
         Those two alone will change more than a month of resolutions. Layer the
         rest in as they become natural. And feed the part of you that
         <Em> wants</Em> to pray — a heart that hears one verse a day answers the
-        adhan far more easily than one that only hears notifications. That is
-        the entire reason Ilham exists.
+        adhan far more easily than one that only hears notifications. It is
+        also why we built AyahReel: so the reel someone scrolls past can be a
+        verse.
       </P>
 
       <ArticleCTA
         location="blog_stop_delaying_end"
         headline="Stop reading about it. Start with one verse a day."
-        body="Ilham brings your heart back to the Quran gently — a daily pairing of wisdom and revelation, streaks you'll want to keep, and anonymous duas from people you may never meet. Free on Android, no account needed."
+        body="AyahReel brings your heart back to the Quran gently: a daily ayah, a streak you will want to keep, and reels you can share in under a minute. Free, no ads, no account."
       />
     </>
   );
