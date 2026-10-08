@@ -362,9 +362,6 @@ export function Privacy() {
             <Eyebrow>Private by design</Eyebrow>
             <H2>Your reels are yours</H2>
           </div>
-          <Link href="/privacy" className="text-sm font-medium text-gold hover:text-gold-bright">
-            Read the privacy policy →
-          </Link>
         </div>
         <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
           {PRIVACY.map((p) => (

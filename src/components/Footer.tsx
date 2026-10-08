@@ -50,7 +50,7 @@ export default function Footer() {
           <p className="mb-4 text-xs uppercase tracking-[0.2em] text-gold">More</p>
           <ul className="space-y-2.5 text-sm text-cream-dim">
             <li><Link href="/blog" className="hover:text-cream-bright">Guides</Link></li>
-            <li><Link href="/privacy" className="hover:text-cream-bright">Privacy policy</Link></li>
+            <li><Link href="/privacy" className="hover:text-cream-bright">Ilham privacy policy</Link></li>
             <li>
               <a href={`mailto:${CONTACT_EMAIL}`} className="hover:text-cream-bright">
                 Contact

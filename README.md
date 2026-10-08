@@ -1,13 +1,13 @@
 # AyahReel website
 
-Landing page, guides and privacy policy for **AyahReel**, the Quran reel
+Landing page and guides for **AyahReel**, the Quran reel
 maker for Android and iPhone. Next.js 16 (App Router) + Tailwind 4.
 
 | Route | What it is |
 |---|---|
 | `/` | Landing page (`src/components/home/`) |
 | `/blog`, `/blog/[slug]` | Guides. One module per post in `src/content/blog/`, listed in `src/lib/blog/registry.ts` |
-| `/privacy` | AyahReel privacy policy, plus the old Ilham policy at `/privacy#ilham` |
+| `/privacy` | The Ilham app's privacy policy (Ilham's store listing points here) |
 | `/ayahreel` | Direct APK download (noindex, meant to be sent, not found) |
 | `/d/[id]` | Legacy Ilham anonymous dua links, kept working |
 

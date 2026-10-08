@@ -32,6 +32,6 @@ export const homeFaq: FaqItem[] = [
   },
   {
     q: "What happens to my data?",
-    a: "Nothing leaves your phone. AyahReel has no accounts, no advertising, no analytics and no tracking. Your reels, photos and recordings stay on your device. The full details are in the privacy policy.",
+    a: "Nothing leaves your phone. AyahReel has no accounts, no advertising, no analytics and no tracking. Your reels, photos and recordings stay on your device.",
   },
 ];
